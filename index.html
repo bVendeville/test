@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <!-- Replace this with your dynamic Gradio app link -->
-    <meta http-equiv="refresh" content="0;url=https://your-dynamic-gradio-link.com">
     <script>
-        // Optional: JavaScript redirection for better support
-        window.location.href = "https://a74779183b8dffe27d.gradio.live";
+        // Dynamically set the redirect URL to avoid caching
+        const redirectUrl = "https://a950355d345d3cfe59.gradio.live/";  // Update with your new link
+        const redirectDelay = 0; // in seconds
+
+        // Force redirect after the specified delay
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, redirectDelay * 1000);
+
+        // Optional: Show a message in case JavaScript is disabled
+        document.write('<p>If you are not redirected automatically, <a href="' + redirectUrl + '">click here</a>.</p>');
     </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://b1040027fc5da0bf3b.gradio.live/">click here</a>.</p>
+    <p>Redirecting you... Please wait...</p>
 </body>
 </html>
